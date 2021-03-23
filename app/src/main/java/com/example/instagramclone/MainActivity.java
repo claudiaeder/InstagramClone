@@ -77,26 +77,6 @@ public class MainActivity extends AppCompatActivity {
         // Set default selection
         bottomNavigationView.setSelectedItemId(R.id.action_home);
 
-
-        /*btnLogout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ParseUser.logOutInBackground(new LogOutCallback() {
-                    @Override
-                    public void done(ParseException e) {
-                        if (e!=null){
-                            //better error handling with toasts
-                            Log.e(TAG, "Issue with logout", e);
-                            return;
-                        }
-                        Log.i(TAG, "User: " + ParseUser.getCurrentUser());
-                        goLoginActivity();
-                    }
-                });
-
-            }
-        });*/
-
     }
 
     private void userLogout(){
